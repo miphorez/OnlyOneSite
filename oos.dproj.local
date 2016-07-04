@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2015.07.30 11:17:56.617.pas,C:\Users\Dmitry\Documents\RAD Studio\Projects\Unit1.pas=C:\Source\HTMLparsing\frmHTMLparsing.pas</Transaction>
+    <Transaction>2015.07.30 11:17:56.635.dfm,C:\Users\Dmitry\Documents\RAD Studio\Projects\Unit1.dfm=C:\Source\HTMLparsing\frmHTMLparsing.dfm</Transaction>
+    <Transaction>2015.07.30 11:26:23.256.dproj,C:\Users\Dmitry\Documents\RAD Studio\Projects\Project1.dproj=C:\Users\Dmitry\Documents\RAD Studio\Projects\HTMLparsing.dproj</Transaction>
+    <Transaction>2015.07.30 11:28:58.993.dproj,C:\Users\Dmitry\Documents\RAD Studio\Projects\HTMLparsing.dproj=C:\Source\HTMLparsing\HTMLparsing.dproj</Transaction>
+    <Transaction>2015.07.30 11:30:12.191.pas,C:\Source\HTMLparsing\Unit1.pas=C:\Source\HTMLparsing\_unit\uHTMLp.pas</Transaction>
+    <Transaction>2015.07.31 15:40:55.346.pas,C:\Source\HTMLparsing\Unit1.pas=C:\Source\HTMLparsing\_unit\_uFuncTimer_Idle.pas</Transaction>
+    <Transaction>2015.12.05 13:01:32.089.dproj,C:\Source\OnlyOneSite\HTMLparsing.dproj=C:\Source\OnlyOneSite\oos.dproj</Transaction>
+    <Transaction>2015.12.05 13:02:08.616.pas,C:\Source\OnlyOneSite\frmHTMLparsing.pas=C:\Source\OnlyOneSite\frmOOS.pas</Transaction>
+    <Transaction>2015.12.05 13:02:08.616.dfm,C:\Source\OnlyOneSite\frmHTMLparsing.dfm=C:\Source\OnlyOneSite\frmOOS.dfm</Transaction>
+    <Transaction>2015.12.05 13:20:01.435.pas,C:\Source\OnlyOneSite\_unit\_uFuncTimer_Idle.pas=</Transaction>
+    <Transaction>2015.12.05 13:20:54.855.pas,C:\Source\OnlyOneSite\_unit\TMImport.pas=</Transaction>
+    <Transaction>2015.12.05 13:21:36.246.pas,C:\Source\OnlyOneSite\_unit\uHTMLp.pas=C:\Source\OnlyOneSite\_unit\uOOS.pas</Transaction>
+  </Transactions>
+</BorlandProject>

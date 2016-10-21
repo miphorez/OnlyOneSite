@@ -35,7 +35,6 @@ type
     procedure mi_OpenListClick(Sender: TObject);
   private
     { Private declarations }
-    flAdmin: boolean;
     function selectSiteFromList: string;
   public
     { Public declarations }
@@ -47,6 +46,7 @@ type
 var
   frm_OOS: Tfrm_OOS;
   sItemSiteAdr:string;
+  flAdmin: boolean;
 
 implementation
 uses
@@ -66,7 +66,6 @@ end;
 
 procedure Tfrm_OOS.FormShow(Sender: TObject);
 begin
-flAdmin:= false;
 fr_eSite.SetBtn(70,'Адрес сайта:',false,Handle,nil,'','');
 fr_eSite.btn_save.Hint:= 'Адрес сайта';
 fr_eSite.SetSaveOpenMode(true,false);
@@ -74,7 +73,6 @@ fr_eSite.SetEdit(teSiteAdr, '');
 //загрузка сайта, если есть адрес
 SiteAdr:= '';
 p_edit.Visible:= true;
-flAdmin:= false;
    sItemSiteAdr:= selectSiteFromList();
    SiteAdr:= sItemSiteAdr;
    Caption:= sPROG_NAME+' ('+SiteAdr+')';
@@ -151,7 +149,9 @@ case msg.WParam of
 WM_EDITSAVE_SITEADR: begin  //ввод названия сайта
    lp := PChar(msg.lParam);
    SiteAdr:= string(lp);
-   SiteAdr:= XorHexDataToStr(SiteAdr);
+   if not flAdmin then begin
+      SiteAdr:= XorHexDataToStr(SiteAdr);
+   end;
    signAdr:= DelLeftRightSpace(InputBox('Введите сигнатуру сайта','Сигнатура:',SiteAdr));
    if signAdr<>'' then begin
         Reg:= TRegistry.Create;

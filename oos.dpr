@@ -13,6 +13,8 @@ uses
 {$R *.res}
 
 begin
+  if (ParamCount > 0)and(ParamStr(1) = '-admin') then
+   flAdmin:= true else flAdmin:= false;
 
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
